@@ -14,7 +14,7 @@ An IoT system powered by ESP32 that streams real-time environmental data (Temper
 ## 🛠️ Tech Stack
 - **Hardware:** ESP32 Dev Module 
 
-[Image of Arduino IDE interface]
+
 , DHT11 Sensor
 - **Cloud:** AWS IoT Core
 - **Protocol:** MQTT (Port 8883)
