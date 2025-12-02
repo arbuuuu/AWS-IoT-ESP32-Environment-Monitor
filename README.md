@@ -20,13 +20,30 @@ An IoT system powered by ESP32 that streams real-time environmental data (Temper
 - **Protocol:** MQTT (Port 8883)
 - **Library:** ArduinoJson, MQTT (Joel Gaehwiler)
 
-## ⚙️ How to Run
-1. Clone this repository.
-2. Open `src/main.ino` in Arduino IDE.
-3. Create a file named `secrets.h` inside the `src` folder.
-4. Add your Wi-Fi credentials and AWS Certificates in `secrets.h` (See code structure).
-5. Upload to ESP32.
+How to Run This Project
+Clone the Repository:
 
+Setup Credentials:
+
+Create a file named secrets.h inside the src folder.
+
+Add your Wi-Fi Credentials and AWS Certificates (Root CA, Cert, Private Key) in that file.
+
+Flash the Code:
+
+Open src/main.ino in Arduino IDE.
+
+Select Board: ESP32 Dev Module.
+
+Select Port and click Upload.
+
+Monitor Data:
+
+Open Serial Monitor (Baud Rate: 115200) to see connection logs.
+
+Go to AWS IoT Console > MQTT Test Client.
+
+Subscribe to topic: esp32/status to view live data.
 ## 🔒 Security Note
 The `secrets.h` file containing Private Keys and Wi-Fi passwords is excluded from this repository for security reasons.
 
